@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Decks from '../pages/Deck_Index'
 
 const Main = (props) => {
   const [decks, setDecks] = useState([])
@@ -20,15 +21,15 @@ const Main = (props) => {
   })
 
   return (
-    <div>
-      {decks.map((deck) => (
-        <div> 
-          <l1>{ deck.name } Flashcards ids: {deck._id}</l1>
-        </div>
-          )
-        )
-      }
-    </div>
+    <main>
+      <Routes>
+        <Route path='/'
+          element = {
+            <Decks decks={decks}/>
+          }
+        />
+      </Routes>
+    </main>
   )
 }
 
