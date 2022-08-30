@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import NewDeckModal from "../components/NewDeckModal"
 
 const DeckList = ({ decks }) => {
 
@@ -20,6 +21,7 @@ const DeckList = ({ decks }) => {
   return (
     <section>
       {decks ? loaded() : loading()}
+      <NewDeckModal />
     </section>
     
 
