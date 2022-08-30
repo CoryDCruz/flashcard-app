@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Decks from '../pages/Deck_Index'
+import FlashcardList from '../pages/FlashcardList'
+import DeckList from '../pages/DeckList'
 
 const Main = (props) => {
-  const [decks, setDecks] = useState([])
+  
   const URL = 'http://localhost:4000/api/decks'
+  const [deck, setDeck] = useState([])
 
   const getDecks = async () => {
     try {
       const response = await fetch(URL)
       const data = await response.json()
-      setDecks(data)
+      setDeck(data)
     } catch (error) {
       console.log(error)
     }
   }
+
 
   useEffect(() => {
     getDecks()
@@ -23,9 +26,15 @@ const Main = (props) => {
   return (
     <main>
       <Routes>
-        <Route path='/'
-          element = {
-            <Decks decks={decks}/>
+        <Route path='/' 
+          element={
+            <DeckList decks={deck} />
+          }
+        />
+        <Route path='/decks/:id'
+          element ={
+            <FlashcardList 
+            />
           }
         />
       </Routes>

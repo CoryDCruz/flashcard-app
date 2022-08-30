@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const Decks = ({ decks }) => {
+const DeckList = ({ decks }) => {
 
   const loading = () => {
     return <h1>Loading...</h1>
@@ -26,4 +26,4 @@ const Decks = ({ decks }) => {
   )
 } 
 
-export default Decks
+export default DeckList
