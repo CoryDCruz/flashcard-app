@@ -11,7 +11,6 @@ const DeckForm = ({ createDeck }) => {
 //handleSubmit will call createDeck
   const handleSubmit = e => {
     e.preventDefault()
-    console.log(newForm)
     createDeck(newForm)
     setNewForm({
       name:"",

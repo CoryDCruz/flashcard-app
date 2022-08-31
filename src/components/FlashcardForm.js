@@ -41,7 +41,7 @@ const FlashcardForm = ({ createFlashcard, deckId }) => {
         <Form.Label>Answer</Form.Label>
         <Form.Control 
           type="text" 
-          placeholder="Enter Link to Image" 
+          placeholder="Enter Answer" 
           value={newForm.back}
           name="back"
           onChange={handleChange}

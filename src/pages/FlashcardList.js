@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Flashcard from '../components/Flashcard';
 import NewFlashcardModal from '../components/NewFlashcardModal';
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const FlashcardList = () => {
 
@@ -31,9 +34,9 @@ const FlashcardList = () => {
       <div className="card-grid">
         {flashcards.map(flashcard => {
           return (
-            <div key={flashcard._id}>
+            <Col key={flashcard._id}>
               <Flashcard flashcard={flashcard} />
-            </div>
+            </Col>
           )
         })}
       </div>
@@ -49,7 +52,6 @@ const FlashcardList = () => {
     } catch (error) {
       
     }
-
   }
 
   useEffect(() => {
@@ -58,9 +60,13 @@ const FlashcardList = () => {
 
   return (
     <div>
-      {flashcards ? loaded() : loading()}
-      <NewFlashcardModal id={id} />
-      <Button variant="outline-danger" onClick={deleteDeck}>Delete Deck</Button>
+      <Container>
+        <h1>Flashcards</h1>
+        {flashcards ? loaded() : loading()}
+        <NewFlashcardModal id={id} />
+        <Button variant="outline-danger" onClick={deleteDeck}>Delete Deck</Button>
+      </Container>
+      
     </div>
     )
 
