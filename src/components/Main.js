@@ -19,7 +19,6 @@ const Main = (props) => {
     }
   }
 
-
   useEffect(() => {
     getDecks()
   })
@@ -30,7 +29,7 @@ const Main = (props) => {
       <Routes>
         <Route path='/' 
           element={
-            <DeckList decks={deck} />
+            <DeckList decks={deck} URL={URL}/>
           }
         />
         <Route path='/decks/:id'

@@ -4,6 +4,17 @@ import Card from "react-bootstrap/Card"
 
 const DeckList = ({ decks, URL }) => {
 
+  const deleteDeck = async (id) => {
+    try {
+      await fetch(`${URL}/${id}`, {
+        method: "DELETE"
+      })
+
+    } catch (error) {
+      
+    }
+
+  }
   const loading = () => {
     return <h1>Loading...</h1>
   }
@@ -20,13 +31,11 @@ const DeckList = ({ decks, URL }) => {
             </div>
           </Card.Body>
         </Card>
-        
       )
     })
   }
   return (
     <section>
-      
       {decks ? loaded() : loading()}
       <NewDeckModal />
     </section>
