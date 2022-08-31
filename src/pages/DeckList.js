@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import NewDeckModal from "../components/NewDeckModal"
 
-const DeckList = ({ decks }) => {
+const DeckList = ({ decks, URL }) => {
 
   const loading = () => {
     return <h1>Loading...</h1>

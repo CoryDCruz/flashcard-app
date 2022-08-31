@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
 import Flashcard from '../components/Flashcard';
+import NewFlashcardModal from '../components/NewFlashcardModal';
 
 const FlashcardList = () => {
 
@@ -44,6 +45,7 @@ const FlashcardList = () => {
   return (
     <div>
       {flashcards ? loaded() : loading()}
+      <NewFlashcardModal id={id} />
     </div>
     )
 

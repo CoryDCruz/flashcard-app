@@ -2,20 +2,19 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 
-const DeckForm = ({ createDeck }) => {
+const FlashcardForm = ({ createFlashcard, deckId }) => {
   const [newForm, setNewForm] = useState({
-    name: "",
-    icon: ""
+    front: "",
+    back: ""
   })
 
 //handleSubmit will call createDeck
   const handleSubmit = e => {
     e.preventDefault()
-    console.log(newForm)
-    createDeck(newForm)
+    createFlashcard(newForm)
     setNewForm({
-      name:"",
-      icon: ""
+      front:"",
+      back: ""
     })
   } 
 
@@ -29,22 +28,22 @@ const DeckForm = ({ createDeck }) => {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="formDeckName">
-        <Form.Label>Name</Form.Label>
+        <Form.Label>Question</Form.Label>
         <Form.Control 
           type="text" 
-          placeholder="Enter Name of Deck"
-          value={newForm.name}
-          name="name"
+          placeholder="Enter question"
+          value={newForm.front}
+          name="front"
           onChange={handleChange} 
           />
       </Form.Group>
       <Form.Group controlId="formDeckIcon">
-        <Form.Label>Deck Icon</Form.Label>
+        <Form.Label>Answer</Form.Label>
         <Form.Control 
           type="text" 
           placeholder="Enter Link to Image" 
-          value={newForm.icon}
-          name="icon"
+          value={newForm.back}
+          name="back"
           onChange={handleChange}
           />
       </Form.Group>
@@ -53,4 +52,4 @@ const DeckForm = ({ createDeck }) => {
   )
 }
 
-export default DeckForm
+export default FlashcardForm

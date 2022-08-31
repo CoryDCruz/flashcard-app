@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
-import DeckForm from './DeckForm';
+import FlashcardForm from './FlashcardForm';
 
-const NewDeckModal = () => {
-  const URL = 'http://localhost:4000/api/decks'
+const NewFlashcardModal = ({ id }) => {
+  const URL = `http://localhost:4000/api/decks/flashcards/${id}`
+  const deckId = id
   const[showState, setShowState] = useState(false)
 
   const handleClose = () => setShowState(false)
 
   const handleOpen = () => setShowState(true)
 
-  const createDeck = async (deck) => { 
+  const createFlashcard = async (flashcard) => { 
     await fetch(URL, {
       method: "POST",
       headers: {
         "Content-type": "Application/json",
       },
-      body: JSON.stringify(deck)
+      body: JSON.stringify(flashcard)
     })
     setShowState(false)
   }
@@ -25,15 +26,15 @@ const NewDeckModal = () => {
   return (
     <>
       <Button className="nextButton" onClick={handleOpen}>
-        New Deck
+        New Flashcard
       </Button>
 
       <Modal show={showState} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Create New Deck</Modal.Title>
+          <Modal.Title>Create New Flashcard</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <DeckForm createDeck={createDeck} />
+          <FlashcardForm createFlashcard={createFlashcard} deckId={deckId}/>
         </Modal.Body>
       </Modal>
     </>
@@ -41,4 +42,4 @@ const NewDeckModal = () => {
   )
 }
 
-export default NewDeckModal
+export default NewFlashcardModal
