@@ -47,7 +47,10 @@ const DeckForm = ({ createDeck }) => {
           onChange={handleChange}
           />
       </Form.Group>
-      <Button type="submit" variant="primary">Submit</Button>
+      <div style={{ padding: 10 }}>
+        <Button type="submit" variant="primary">Submit</Button>
+      </div>
+      
     </Form>
   )
 }

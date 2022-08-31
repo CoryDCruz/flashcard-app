@@ -14,10 +14,10 @@ const DeckList = ({ decks, URL }) => {
   const loaded = () => {
     return decks.map((deck) => {
       return (
-        <Col key={deck._id}>
-           <Card style={{ width: '18rem' }}>
+        <Col key={deck._id} style={{ padding: 15}}>
+           <Card>
             <Card.Body>
-              <Link to={`/decks/${deck._id}`}>
+              <Link style={{ textDecoration: "none"}} to={`/decks/${deck._id}`}>
                 <h1>{deck.name}</h1>
               </Link>
             </Card.Body>
@@ -29,8 +29,8 @@ const DeckList = ({ decks, URL }) => {
   }
   return (
     <div className="deckList">
-      <h1>Decks</h1>
-      <Container fluid className="deckList">
+      <h1>Choose a Deck to Study</h1>
+      <Container fluid>
           {decks ? loaded() : loading()}  
         <NewDeckModal />
       </Container>

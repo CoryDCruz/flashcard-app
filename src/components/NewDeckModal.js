@@ -27,7 +27,6 @@ const NewDeckModal = () => {
       <Button className="nextButton" onClick={handleOpen}>
         New Deck
       </Button>
-
       <Modal show={showState} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Create New Deck</Modal.Title>

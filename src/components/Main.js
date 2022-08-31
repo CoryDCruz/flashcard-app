@@ -25,7 +25,6 @@ const Main = (props) => {
 
   return (
     <main>
-      <Header />
       <Routes>
         <Route path='/' 
           element={

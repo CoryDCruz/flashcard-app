@@ -29,7 +29,7 @@ const NewFlashcardModal = ({ id }) => {
         New Flashcard
       </Button>
 
-      <Modal show={showState} onHide={handleClose} centered>
+      <Modal show={showState} onHide={handleClose} centered> 
         <Modal.Header closeButton>
           <Modal.Title>Create New Flashcard</Modal.Title>
         </Modal.Header>

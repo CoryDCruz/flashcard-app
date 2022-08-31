@@ -34,7 +34,7 @@ const FlashcardList = () => {
       <div className="card-grid">
         {flashcards.map(flashcard => {
           return (
-            <Col key={flashcard._id}>
+            <Col key={flashcard._id} style={{ padding: 15}}>
               <Flashcard flashcard={flashcard} />
             </Col>
           )
@@ -59,15 +59,22 @@ const FlashcardList = () => {
   })
 
   return (
-    <div>
-      <Container>
-        <h1>Flashcards</h1>
-        {flashcards ? loaded() : loading()}
-        <NewFlashcardModal id={id} />
-        <Button variant="outline-danger" onClick={deleteDeck}>Delete Deck</Button>
-      </Container>
-      
+    <div style={{ padding: 10}}>
+      <Button onClick={() => navigate('/')}>Back</Button>
+      <div className="flashcardList">
+        <Container>
+          <h1>Flashcards</h1>
+          {flashcards ? loaded() : loading()}
+          <div style={{ padding: 10}}>
+            <NewFlashcardModal id={id} />
+          </div>
+          <div style={{ padding: 10}}>
+            <Button variant="outline-danger" onClick={deleteDeck}>Delete Deck</Button>
+          </div>
+        </Container>
+      </div>
     </div>
+    
     )
 
 }
