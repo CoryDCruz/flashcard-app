@@ -21,7 +21,7 @@ const FlashcardList = () => {
   }
 
   const loading = () => {
-    return <h1>Loading</h1> // add spinner
+    return <h1>Loading....</h1> // add spinner
   }
 
   const loaded = () => {
