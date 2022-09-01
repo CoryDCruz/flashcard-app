@@ -2,12 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import { GiBrain } from 'react-icons/gi'
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="black" expand="lg">
       <Container>
-        <Navbar.Brand style={{ textAlign: "left" }}as={Link} to="/">Flashcard App</Navbar.Brand>
+        <Navbar.Brand 
+          style={{ textAlign: "left", color: "white" }}
+          as={Link} 
+          to="/">
+          <GiBrain /> Flashcard App</Navbar.Brand>
       </Container>
     </Navbar>
   );

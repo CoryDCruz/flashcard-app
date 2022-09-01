@@ -39,7 +39,7 @@ const DeckList = ({ decks, URL }) => {
   }
   return (
     <div className="deckList">
-      <h1>Select a Deck</h1>
+      <h1 style={{ padding: 15 }}>Select a Deck</h1>
       <Container fluid>
           {decks ? loaded() : loading()}  
         <NewDeckModal />

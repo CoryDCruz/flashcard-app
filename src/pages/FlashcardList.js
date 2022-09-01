@@ -74,7 +74,6 @@ const FlashcardList = () => {
         </Container>
       </div>
     </div>
-    
     )
 
 }
