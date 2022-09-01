@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">Flashcard App</Navbar.Brand>
+        <Navbar.Brand style={{ textAlign: "left" }}as={Link} to="/">Flashcard App</Navbar.Brand>
       </Container>
     </Navbar>
   );

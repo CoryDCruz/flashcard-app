@@ -28,23 +28,13 @@ const DeckForm = ({ createDeck }) => {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="formDeckName">
-        <Form.Label>Name</Form.Label>
+        <Form.Label>Deck Name</Form.Label>
         <Form.Control 
           type="text" 
           placeholder="Enter Name of Deck"
           value={newForm.name}
           name="name"
           onChange={handleChange} 
-          />
-      </Form.Group>
-      <Form.Group controlId="formDeckIcon">
-        <Form.Label>Deck Icon</Form.Label>
-        <Form.Control 
-          type="text" 
-          placeholder="Enter Link to Image" 
-          value={newForm.icon}
-          name="icon"
-          onChange={handleChange}
           />
       </Form.Group>
       <div style={{ padding: 10 }}>

@@ -8,7 +8,7 @@ const Flashcard = ({ flashcard }) => {
   return (
     <div>
       <Card className="justify-content-center" border="primary" onClick={() => setFlip(!flip)}>
-        <Card.Body> {flip ? flashcard.back : flashcard.front}</Card.Body>
+        <Card.Body style={{ textAlign: "center" }}> {flip ? flashcard.back : flashcard.front}</Card.Body>
       </Card>
     </div>
   )
