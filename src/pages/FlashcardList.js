@@ -4,8 +4,8 @@ import Flashcard from '../components/Flashcard';
 import NewFlashcardModal from '../components/NewFlashcardModal';
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Triangle } from 'react-loader-spinner'
 
 const FlashcardList = () => {
 
@@ -26,7 +26,15 @@ const FlashcardList = () => {
   }
 
   const loading = () => {
-    return <h1>Loading....</h1> // add spinner
+    return <Triangle
+              height="80"
+              width="80"
+              color="black"
+              ariaLabel="triangle-loading"
+              wrapperStyle={{}}
+              wrapperClassName=""
+              visible={true}
+              />  
   }
 
   const loaded = () => {

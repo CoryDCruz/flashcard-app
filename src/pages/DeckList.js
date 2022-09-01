@@ -32,10 +32,11 @@ const DeckList = ({ decks, URL }) => {
       <h1 style={{ padding: 15 }}>Select a Deck</h1>
       <Container fluid>
           {decks ? loaded() : loading()}  
-        <NewDeckModal />
       </Container>
-    </div>
-
+      <Container fluid >
+        <NewDeckModal/>
+      </Container>
+      </div>
   )
 } 
 
