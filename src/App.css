@@ -10,6 +10,8 @@
 }
 
 .card {
+  font-size: x-large;
+  font-weight: bold;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -18,12 +20,11 @@
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
   background-color: white; 
   transform-style: preserve-3d;
-  height: 500px;
-  width: 500px;
   transition: 150ms;
   cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
   translateY(var(--translate-y, 0));
+  padding: 100px;
 }
 
 .card:hover {
@@ -38,7 +39,7 @@
 .card .front, 
 .card .back {
   position: absolute;
-  padding: 1rem;
+  padding: 10px;
   backface-visibility: hidden;
   
 }

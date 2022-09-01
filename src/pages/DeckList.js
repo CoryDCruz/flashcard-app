@@ -11,16 +11,6 @@ const DeckList = ({ decks, URL }) => {
     return <h1>Loading...</h1>
   }
 
-  const setHeader = () => {
-    if (decks.count === 0) {
-      return <h1>Create a Deck</h1>
-    }
-    else {
-      return <h1>Select a Deck</h1>
-    }
-    
-  }
-
   const loaded = () => {
     return decks.map((deck) => {
       return (
