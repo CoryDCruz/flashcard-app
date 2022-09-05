@@ -14,6 +14,7 @@ const FlashcardList = () => {
   const URL = `http://localhost:4000/api/decks/flashcards/${id}`
   const navigate = useNavigate()
   const [flashcards, setFlashcards] = useState([])
+  const [deck, setDeck] = useState("")
 
   const getFlashCards = async () => {
     try {
@@ -22,6 +23,16 @@ const FlashcardList = () => {
       setFlashcards(data)
     } catch (error) {
       //TODO add error message
+    }
+  }
+
+  const getDeck = async () => {
+    try {
+      const response = await fetch(`http://localhost:4000/api/decks/${id}`)
+      const data = await response.json()
+      setDeck(data)
+    } catch (error) {
+      
     }
   }
 
@@ -64,6 +75,7 @@ const FlashcardList = () => {
 
   useEffect(() => {
     getFlashCards()
+    getDeck()
   })
 
   return (
@@ -71,7 +83,7 @@ const FlashcardList = () => {
       <Button onClick={() => navigate('/')}>Back</Button>
       <div className="flashcardList">
         <Container>
-          <h1>Flashcards</h1>
+          <h1>{deck.name}</h1>
           {flashcards ? loaded() : loading()}
           <div style={{ padding: 10}}>
             <NewFlashcardModal id={id} />
