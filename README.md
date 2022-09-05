@@ -23,5 +23,5 @@ Simple single-page react applications where users are able to create flashcard d
 - Ability to edit/delete individual flashcards. 
 
 # Deployment 
-https://gentle-medovik-f1442a.netlify.app/decks/63165851a09183c68606c2e2
+https://gentle-medovik-f1442a.netlify.app
 
