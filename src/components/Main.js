@@ -20,7 +20,7 @@ const Main = (props) => {
 
   useEffect(() => {
     getDecks()
-  })
+  }, [])
 
   return (
     <main>
