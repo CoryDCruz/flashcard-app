@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import FlashcardList from '../pages/FlashcardList'
 import DeckList from '../pages/DeckList'
-import Header from './Header';
 
 const Main = (props) => {
   
