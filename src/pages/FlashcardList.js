@@ -31,7 +31,6 @@ const FlashcardList = () => {
       const response = await fetch(`http://localhost:4000/api/decks/${id}`)
       const data = await response.json()
       setDeck(data)
-      getFlashCards()
     } catch (error) {
       
     }
@@ -75,7 +74,8 @@ const FlashcardList = () => {
   }
 
   useEffect(() => {
-    getDeck()
+    getDeck();
+    getFlashCards();
   }, [])
 
   return (
