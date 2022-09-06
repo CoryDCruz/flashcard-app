@@ -3,6 +3,7 @@ import NewDeckModal from "../components/NewDeckModal"
 import Card from "react-bootstrap/Card"
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import { useEffect } from "react";
 
 const DeckList = ({ decks, getDecks }) => {
 
