@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import FlashcardForm from './FlashcardForm';
 
-const NewFlashcardModal = ({ id }) => {
+const NewFlashcardModal = ({ id, getFlashCards }) => {
   const URL = `http://localhost:4000/api/decks/flashcards/${id}`
   const deckId = id
   const[showState, setShowState] = useState(false)
@@ -21,6 +21,8 @@ const NewFlashcardModal = ({ id }) => {
       body: JSON.stringify(flashcard)
     })
     setShowState(false)
+    getFlashCards()
+
   }
   
   return (

@@ -27,7 +27,7 @@ const Main = (props) => {
       <Routes>
         <Route path='/' 
           element={
-            <DeckList decks={deck} URL={URL}/>
+            <DeckList decks={deck} URL={URL} getDecks={getDecks}/>
           }
         />
         <Route path='/decks/:id'

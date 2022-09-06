@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
 
-const DeckList = ({ decks, URL }) => {
+const DeckList = ({ decks, getDecks }) => {
 
   const loading = () => {
     return <h1>Loading...</h1>
@@ -34,7 +34,7 @@ const DeckList = ({ decks, URL }) => {
           {decks ? loaded() : loading()}  
       </Container>
       <Container fluid >
-        <NewDeckModal/>
+        <NewDeckModal getDecks={getDecks}/>
       </Container>
       </div>
   )

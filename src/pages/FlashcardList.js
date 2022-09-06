@@ -86,7 +86,7 @@ const FlashcardList = () => {
           <h1>{deck.name}</h1>
           {flashcards ? loaded() : loading()}
           <div style={{ padding: 10}}>
-            <NewFlashcardModal id={id} />
+            <NewFlashcardModal id={id} getFlashCards={getFlashCards}/>
           </div>
           <div style={{ padding: 10}}>
             <Button variant="outline-danger" onClick={deleteDeck}>Delete Deck</Button>

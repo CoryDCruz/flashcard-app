@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import DeckForm from './DeckForm';
 
-const NewDeckModal = () => {
+const NewDeckModal = ({ getDecks }) => {
   const URL = 'http://localhost:4000/api/decks'
   const[showState, setShowState] = useState(false)
 
@@ -20,6 +20,7 @@ const NewDeckModal = () => {
       body: JSON.stringify(deck)
     })
     setShowState(false)
+    getDecks()
   }
   
   return (
