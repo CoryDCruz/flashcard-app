@@ -1,6 +1,6 @@
 # Flashcard Application
 
-Basic single-page react applications where users are able to create flashcard decks and corresponding flashcards within the decks.  Flashcards are animated to display the answer when clicked/flipped. Users are able to delete decks.  
+Basic single-page react application where users are able to create flashcard decks and corresponding flashcards within the decks.  Flashcards are animated to display the answer when clicked/flipped. In it's current iterations, users are able to delete entire decks. Future versions will allow users to edit decks and individual flashcards. 
 
 
 # Technologies Used
