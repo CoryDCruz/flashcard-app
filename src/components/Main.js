@@ -13,6 +13,7 @@ const Main = (props) => {
       const response = await fetch(URL)
       const data = await response.json()
       setDeck(data)
+      getDecks()
     } catch (error) {
       console.log(error)
     }
