@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card"
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
-
 const DeckList = ({ decks, getDecks }) => {
 
   const loading = () => {
@@ -27,6 +26,7 @@ const DeckList = ({ decks, getDecks }) => {
       )
     })
   }
+
   return (
     <div className="deckList">
       <h1 style={{ padding: 15 }}>Select a Deck</h1>

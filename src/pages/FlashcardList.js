@@ -67,7 +67,8 @@ const FlashcardList = () => {
       await fetch(`http://localhost:4000/api/decks/${id}`, {
         method: "DELETE"
       })
-      navigate('/')
+      window.location.href="/"
+
     } catch (error) {
       
     }
