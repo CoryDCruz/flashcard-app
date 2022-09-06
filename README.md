@@ -23,4 +23,4 @@ Simple single-page react applications where users are able to create flashcard d
 - Ability to edit/delete individual flashcards. 
 
 # Deployment 
-https://arcane-harbor-51198.herokuapp.com/
+https://6317c44656b10e0c825148bf--profound-sprinkles-49bef5.netlify.app/
