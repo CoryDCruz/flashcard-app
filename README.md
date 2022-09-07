@@ -19,6 +19,7 @@ With this app users are able to create custom flashcard decks and flashcards wit
 # Screenshots
 ![image](https://user-images.githubusercontent.com/30585039/188510132-4d4b21a5-8acb-4445-a587-36df1b5618e8.png)
 ![Screen Shot 2022-09-05 at 1 33 22 PM](https://user-images.githubusercontent.com/30585039/188510147-9e025cb6-89ed-4952-9b3d-99310a3dc815.png)
+[ERD.pdf](https://github.com/CoryDCruz/flashcard-app/files/9502062/ERD.pdf)
 
 
 # Future Enhancements
