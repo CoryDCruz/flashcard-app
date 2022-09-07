@@ -25,7 +25,8 @@ With this app users are able to create custom flashcard decks and flashcards wit
 # Future Enhancements
 - Authentication 
 - Ability to edit decks 
-- Ability to edit/delete individual flashcards. 
+- Ability to edit/delete individual flashcards
+- Ability to search for a deck
 
 # Deployment 
 [Click Here to Visit the Flashcard App](https://6317c44656b10e0c825148bf--profound-sprinkles-49bef5.netlify.app/)
