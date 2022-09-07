@@ -24,8 +24,7 @@ With this app users are able to create custom flashcard decks and flashcards wit
 
 # Future Enhancements
 - Authentication 
-- Footer
-- Ability to edit decks
+- Ability to edit decks 
 - Ability to edit/delete individual flashcards. 
 
 # Deployment 
