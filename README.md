@@ -1,6 +1,6 @@
 # Flashcard Application
 
-Flashcard app to help you study! 
+MERN stack flashcard app to help you study! 
 
 With this app users are able to create custom flashcard decks and flashcards within the decks. Each flashcard has a front and a back, click on the card to reveal the answer!
 
