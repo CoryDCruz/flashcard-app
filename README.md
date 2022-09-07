@@ -21,12 +21,12 @@ With this app users are able to create custom flashcard decks and flashcards wit
 ![Screen Shot 2022-09-05 at 1 33 22 PM](https://user-images.githubusercontent.com/30585039/188510147-9e025cb6-89ed-4952-9b3d-99310a3dc815.png)
 [ERD.pdf](https://github.com/CoryDCruz/flashcard-app/files/9502062/ERD.pdf)
 
-
 # Future Enhancements
 - Authentication 
 - Ability to edit decks 
 - Ability to edit/delete individual flashcards
 - Ability to search for a deck
+- Mobile friendly 
 
 # Deployment 
 [Click Here to Visit the Flashcard App](https://6317c44656b10e0c825148bf--profound-sprinkles-49bef5.netlify.app/)
