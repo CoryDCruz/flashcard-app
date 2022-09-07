@@ -28,4 +28,4 @@ With this app users are able to create custom flashcard decks and flashcards wit
 - Ability to edit/delete individual flashcards. 
 
 # Deployment 
-https://6317c44656b10e0c825148bf--profound-sprinkles-49bef5.netlify.app/
+[Click Here to Visit the Flashcard App](https://6317c44656b10e0c825148bf--profound-sprinkles-49bef5.netlify.app/)
