@@ -1,6 +1,8 @@
 # Flashcard Application
 
-Basic single-page react application where users are able to create flashcard decks and corresponding flashcards within the decks.  Flashcards are animated to display the answer when clicked/flipped. In it's current iterations, users are able to delete entire decks. Future versions will allow users to edit decks and individual flashcards. 
+Flashcard app to help you study! 
+
+With this app users are able to create custom flashcard decks and flashcards within the decks. Each flashcard has a front and a back, click on the card to reveal the answer!
 
 
 # Technologies Used
@@ -9,6 +11,9 @@ Basic single-page react application where users are able to create flashcard dec
 - Bootswatch Lux Theme
 - CSS
 - Flashcard App API
+- express JS
+- Mongoose
+- MongoDB
 
 
 # Screenshots
